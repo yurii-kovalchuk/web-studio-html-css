@@ -697,13 +697,6 @@ img {
   padding-bottom: 0;
 }
 
-.features-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: var(--indent);
-}
-
 .features-list__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
