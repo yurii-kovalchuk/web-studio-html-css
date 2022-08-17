@@ -1,0 +1,116 @@
+.menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  transition: fill var(--anim-main);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-txt-cl);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 40px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--white-cl);
+
+  transform: translateX(100%);
+  transition: transform var(--anim-main);
+
+  &.is-open {
+    transform: translateX(0);
+  }
+}
+
+.close-menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  transition: fill var(--anim-main);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-txt-cl);
+  }
+}
+
+.menu-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: auto;
+}
+
+.menu-nav__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(47 / 40);
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  &--current {
+    color: var(--accent-txt-cl);
+  }
+}
+
+.menu-contacts__tel {
+  display: block;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: calc(40 / 34);
+  letter-spacing: 0.02em;
+  color: var(--accent-txt-cl);
+}
+
+.menu-contacts__mail {
+  display: block;
+  margin-bottom: 64px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.02em;
+  color: var(--secondary-txt-cl);
+}
+
+.menu-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.menu-socials__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-socials__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+  color: var(--accent-txt-cl);
+}

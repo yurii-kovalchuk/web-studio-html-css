@@ -1,22 +1,29 @@
 .clients-list {
+  --items: 2;
+
+  @media screen and (min-width: 768px) {
+    --items: 3;
+  }
+
+  @media screen and (min-width: 1200px) {
     --items: 6;
+  }
 }
 
 .clients-list__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 170px;
-    height: 92px;
-    border: 1px solid var(--main-icons-color);
-    border-radius: 4px;
-    fill: var(--main-icons-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border: 1px solid var(--main-icons-color);
+  border-radius: 4px;
+  fill: var(--main-icons-color);
 
-    transition: border-color var(--anim-main), fill var(--anim-main);
+  transition: border-color var(--anim-main), fill var(--anim-main);
 
-    &:hover,
-    &:focus {
-        border-color: var(--accent-txt-cl);
-        fill: var(--accent-txt-cl);
-    }
+  &:hover,
+  &:focus {
+    border-color: var(--accent-txt-cl);
+    fill: var(--accent-txt-cl);
+  }
 }

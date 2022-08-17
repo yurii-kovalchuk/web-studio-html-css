@@ -41,7 +41,7 @@
         <ul class="contacts list">
           <li class="contacts__item">
             <a class="contacts__link link" href="mailto:info@devstudio.com">
-              <svg width="16" height="12" class="contacts__logo">
+              <svg width="16" height="12" class="contacts__logo logo-mail">
                 <use href="./images/icons.svg#mail"></use>
               </svg>
               <span class="contacts__text">info@devstudio.com</span></a
@@ -49,13 +49,18 @@
           </li>
           <li class="contacts__item">
             <a class="contacts__link link" href="tel:+380961111111">
-              <svg width="10" height="16" class="contacts__logo">
+              <svg width="10" height="16" class="contacts__logo logo-phone">
                 <use href="./images/icons.svg#phone"></use>
               </svg>
               <span class="contacts__text">+38 096 111 11 11</span></a
             >
           </li>
         </ul>
+        <button type="button" class="menu-btn" data-menu-open>
+          <svg width="40" height="40" menu-btn__icon>
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -124,37 +129,49 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="work-list card-set list">
             <li class="work-list__item card-set__item">
-              <img
-                class="work-list__img"
-                src="./images/work/box1.jpg"
-                alt="Руки людини на клавіатурі друкують програмний код, перед клавіатурою планшет, а за ним монітор."
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/work/img-1-@1x.jpg 1x, ./images/work/img-1-@2x.jpg 2x"
+                />
+                <img
+                  class="work-list__img"
+                  src="./images/work/img-1-@1x.jpg"
+                  alt="Руки людини на клавіатурі друкують програмний код, перед клавіатурою планшет, а за ним монітор"
+                />
+              </picture>
               <div class="work-list__overlay">
                 <p class="work-list__desc">Десктопні додатки</p>
               </div>
             </li>
             <li class="work-list__item card-set__item">
-              <img
-                class="work-list__img"
-                src="./images/work/box2.jpg"
-                alt="Людина тримаю в руці телефон і демонструє на екрані ноутбука зображення з трьома телефонами."
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/work/img-2-@1x.jpg 1x, ./images/work/img-2-@2x.jpg 2x"
+                />
+                <img
+                  class="work-list__img"
+                  src="./images/work/img-2-@1x.jpg"
+                  alt="Людина тримаю в руці телефон і демонструє на екрані ноутбука зображення з трьома телефонами"
+                />
+              </picture>
               <div class="work-list__overlay">
                 <p class="work-list__desc">Мобільні додатки</p>
               </div>
             </li>
             <li class="work-list__item card-set__item">
-              <img
-                class="work-list__img"
-                src="./images/work/box3.jpg"
-                alt="Руки людини тримають планшет із відкритою на ньому палітрою кольорів."
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/work/img-3-@1x.jpg 1x, ./images/work/img-3-@2x.jpg 2x"
+                />
+                <img
+                  class="work-list__img"
+                  src="./images/work/img-3-@1x.jpg"
+                  alt="Руки людини тримають планшет із відкритою на ньому палітрою кольорів"
+                />
+              </picture>
               <div class="work-list__overlay">
                 <p class="work-list__desc">Дизайнерські рішення</p>
               </div>
@@ -168,15 +185,27 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list card-set list">
             <li class="team-item card-set__item">
-              <img
-                class="team-item__img"
-                src="./images/team/team1.jpg"
-                alt="портрет мужчины"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-1-d@1x.jpg 1x, ./images/team/img-1-d@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-1-t@1x.jpg 1x, ./images/team/img-1-t@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img-1-m@1x.jpg 1x, ./images/team/img-1-m@2x.jpg 2x"
+                />
+                <img
+                  class="team-item__img"
+                  src="./images/team/img-1-m@1x.jpg"
+                  alt="портрет чоловіка"
+                />
+              </picture>
               <div class="team-item__wrap">
-                <h3 class="team-item__subtitle">Игорь Демьяненко</h3>
+                <h3 class="team-item__subtitle">Ігор Дем'яненко</h3>
                 <p class="team-item__desc">Product Designer</p>
                 <ul class="socials list">
                   <li class="socials__item">
@@ -235,15 +264,27 @@
               </div>
             </li>
             <li class="team-item card-set__item">
-              <img
-                class="team-item__img"
-                src="./images/team/team2.jpg"
-                alt="портрет женщины"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-2-d@1x.jpg 1x, ./images/team/img-2-d@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-2-t@1x.jpg 1x, ./images/team/img-2-t@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img-2-m@1x.jpg 1x, ./images/team/img-2-m@2x.jpg 2x"
+                />
+                <img
+                  class="team-item__img"
+                  src="./images/team/img-2-m@1x.jpg"
+                  alt="портрет жінки"
+                />
+              </picture>
               <div class="team-item__wrap">
-                <h3 class="team-item__subtitle">Ольга Репина</h3>
+                <h3 class="team-item__subtitle">Ольга Рєпіна</h3>
                 <p class="team-item__desc">Frontend Developer</p>
                 <ul class="socials list">
                   <li class="socials__item">
@@ -302,15 +343,27 @@
               </div>
             </li>
             <li class="team-item card-set__item">
-              <img
-                class="team-item__img"
-                src="./images/team/team3.jpg"
-                alt="портрет мужчины"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-3-d@1x.jpg 1x, ./images/team/img-3-d@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-3-t@1x.jpg 1x, ./images/team/img-3-t@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img-3-m@1x.jpg 1x, ./images/team/img-3-m@2x.jpg 2x"
+                />
+                <img
+                  class="team-item__img"
+                  src="./images/team/img-3-m@1x.jpg"
+                  alt="портрет чоловіка"
+                />
+              </picture>
               <div class="team-item__wrap">
-                <h3 class="team-item__subtitle">Николай Тарасов</h3>
+                <h3 class="team-item__subtitle">Микола Тарасов</h3>
                 <p class="team-item__desc">Marketing</p>
                 <ul class="socials list">
                   <li class="socials__item">
@@ -369,13 +422,25 @@
               </div>
             </li>
             <li class="team-item card-set__item">
-              <img
-                class="team-item__img"
-                src="./images/team/team4.jpg"
-                alt="портрет мужчины"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-4-d@1x.jpg 1x, ./images/team/img-4-d@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-4-t@1x.jpg 1x, ./images/team/img-4-t@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img-4-m@1x.jpg 1x, ./images/team/img-4-m@2x.jpg 2x"
+                />
+                <img
+                  class="team-item__img"
+                  src="./images/team/img-4-m@1x.jpg"
+                  alt="портрет жінки"
+                />
+              </picture>
               <div class="team-item__wrap">
                 <h3 class="team-item__subtitle">Михаил Ермаков</h3>
                 <p class="team-item__desc">UI Designer</p>
@@ -688,6 +753,79 @@
       </div>
     </div>
 
+    <!-- Menu section -->
+    <div class="menu" data-menu>
+      <button type="button" class="close-menu-btn" data-menu-close>
+        <svg width="40" height="40" class="close-menu-btn__icon">
+          <use href="./images/icons.svg#close-menu"></use>
+        </svg>
+      </button>
+      <ul class="menu-nav list">
+        <li class="menu-nav__item">
+          <a class="menu-nav__link link menu-nav__link--current" href="./index.html">Студія</a>
+        </li>
+        <li class="menu-nav__item">
+          <a class="menu-nav__link link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="menu-nav__item"><a class="menu-nav__link link" href="">Контакти</a></li>
+      </ul>
+      <ul class="menu-contacts list">
+        <li class="menu-contacts__item">
+          <a class="menu-contacts__link link" href="tel:+380961111111">
+            <span class="menu-contacts__tel">+38 096 111 11 11</span></a
+          >
+        </li>
+        <li class="menu-contacts__item">
+          <a class="menu-contacts__link link" href="mailto:info@devstudio.com">
+            <span class="menu-contacts__mail">info@devstudio.com</span></a
+          >
+        </li>
+      </ul>
+      <ul class="menu-socials list">
+        <li class="menu-socials__item">
+          <a
+            href="https://instagram.com/"
+            class="menu-socials__link link"
+            rel="noreferrer noopener"
+            target="_blank"
+            aria-label="instagram"
+            >Instagram
+          </a>
+        </li>
+        <li class="menu-socials__item">
+          <a
+            href="https://twitter.com/"
+            class="menu-socials__link link"
+            rel="noreferrer noopener"
+            target="_blank"
+            aria-label="twitter"
+            >Twitter
+          </a>
+        </li>
+        <li class="menu-socials__item">
+          <a
+            href="https://facebook.com/"
+            class="menu-socials__link link"
+            rel="noreferrer noopener"
+            target="_blank"
+            aria-label="facebook"
+            >Facebook
+          </a>
+        </li>
+        <li class="menu-socials__item">
+          <a
+            href="https://www.linkedin.com/"
+            class="menu-socials__link link"
+            rel="noreferrer noopener"
+            target="_blank"
+            aria-label="linkedin"
+            >LinkedIn
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

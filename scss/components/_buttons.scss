@@ -1,48 +1,50 @@
 .btn {
-    display: block;
-    font-family: inherit;
-    color: inherit;
-    border: transparent;
-    background-color: var(--light-bg-cl);
-    cursor: pointer;
+  display: block;
+  font-family: inherit;
+  color: inherit;
+  border: transparent;
+  background-color: var(--light-bg-cl);
+  cursor: pointer;
 
-    border-radius: 4px;
+  border-radius: 4px;
 
-    transition: background-color var(--anim-main), color var(--anim-main), box-shadow var(--anim-main);
+  transition: background-color var(--anim-main), color var(--anim-main), box-shadow var(--anim-main);
 
-    &:hover,
-    &:focus {
-        background-color: var(--accent-btn-cl);
-        color: var(--white-cl);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    }
+  &:hover,
+  &:focus {
+    background-color: var(--accent-btn-cl);
+    color: var(--white-cl);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 
-    &--current {
-        background-color: var(--accent-txt-cl);
-        color: var(--white-cl);
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-    }
-}
-
-
-.hero-btn {
-    padding: 10px 32px;
-    margin: 0 auto;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30 / 16);
-    letter-spacing: 0.06em;
+  &--current {
     background-color: var(--accent-txt-cl);
     color: var(--white-cl);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.hero-btn {
+  padding: 10px 24px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  background-color: var(--accent-txt-cl);
+  color: var(--white-cl);
+
+  @media screen and (min-width: 1200px) {
+    padding: 10px 32px;
+  }
 }
 
 .filter-btn {
-    padding: 6px 22px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(26 / 16);
-    text-align: center;
-    letter-spacing: 0.03em;
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
 }
-

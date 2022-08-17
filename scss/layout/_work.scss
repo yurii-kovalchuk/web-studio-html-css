@@ -1,3 +1,11 @@
+.work   {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+}
+
 .work-list__item {
     position: relative;
 }

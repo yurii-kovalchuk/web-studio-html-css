@@ -1,126 +1,135 @@
 .register__group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .register__wrap {
-    position: relative;
-    display: block;
-    margin-bottom: 10px;
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
 
-    font-size: 12px;
-    line-height: calc(14 / 12);
-    letter-spacing: 0.01em;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
 
-    &:last-child {
-        margin-bottom: 0;
-    }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .register__label {
-    display: block;
-    margin-bottom: 4px;
-    color: var(--secondary-txt-cl);
+  display: block;
+  margin-bottom: 4px;
+  color: var(--secondary-txt-cl);
 }
 
 .register__input {
-    padding: 12px 16px;
-    width: 100%;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    outline: var(--accent-txt-cl);
+  padding: 12px 16px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: var(--accent-txt-cl);
 
-    transition: border-color var(--anim-main);
+  transition: border-color var(--anim-main);
 }
 
 .register__comment {
-    min-height: 120px;
-    resize: none;
+  min-height: 120px;
+  resize: none;
 
-    padding: 12px 16px;
-    width: 100%;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    outline: var(--accent-txt-cl);
+  padding: 12px 16px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: var(--accent-txt-cl);
 
-    transition: border-color var(--anim-main);
+  transition: border-color var(--anim-main);
 
-    &::placeholder {
-        color: rgba(117, 117, 117, 0.5);
-    }
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
 
-    &:hover,
-    &:focus {
-        border-color: var(--accent-txt-cl);
-        fill: var(--accent-txt-cl);
-    }
+  &:hover,
+  &:focus {
+    border-color: var(--accent-txt-cl);
+    fill: var(--accent-txt-cl);
+  }
 }
 
 .register__icon {
-    position: absolute;
-    top: 29px;
-    left: 12px;
-    transition: fill var(--anim-main);
+  position: absolute;
+  top: 29px;
+  left: 12px;
+  transition: fill var(--anim-main);
 
-    .register__input:hover+&,
-    .register__comment:hover+&,
-    .register__input:focus+&,
-    .register__comment:focus+& {
-        border-color: var(--accent-txt-cl);
-        fill: var(--accent-txt-cl);
-    }
+  .register__input:hover + &,
+  .register__comment:hover + &,
+  .register__input:focus + &,
+  .register__comment:focus + & {
+    border-color: var(--accent-txt-cl);
+    fill: var(--accent-txt-cl);
+  }
 }
 
 .register__input {
-    padding-left: 42px;
+  padding-left: 42px;
 
-    &:hover,
-    &:focus {
-        border-color: var(--accent-txt-cl);
-        fill: var(--accent-txt-cl);
-    }
+  &:hover,
+  &:focus {
+    border-color: var(--accent-txt-cl);
+    fill: var(--accent-txt-cl);
+  }
 }
 
 .agreement {
-    position: relative;
-    display: block;
-    margin-bottom: 30px;
-    text-align: center;
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .agreement__text {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.03em;
+  color: var(--secondary-txt-cl);
+
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
-    color: var(--secondary-txt-cl);
+  }
 }
 
 .agreement__link {
-    color: var(--accent-txt-cl);
+  color: var(--accent-txt-cl);
 }
 
 .agreement__icon {
-    position: absolute;
-    top: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+
+  @media screen and (min-width: 1200px) {
     bottom: 0;
     margin: auto;
     left: 12px;
+  }
 }
 
 .agreement__icon--check {
-    opacity: 0;
-    transition: opacity var(--anim-main);
+  opacity: 0;
+  transition: opacity var(--anim-main);
 
-    .agreement__chekbox:checked~.agreement__icon & {
-        opacity: 1;
-    }
+  .agreement__chekbox:checked ~ .agreement__icon & {
+    opacity: 1;
+  }
 }
 
 .register-btn {
-    margin: 0 auto;
-    padding: 10px 52px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30 / 16);
-    text-align: center;
-    letter-spacing: 0.06em;
+  margin: 0 auto;
+  padding: 10px 52px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  text-align: center;
+  letter-spacing: 0.06em;
 }
