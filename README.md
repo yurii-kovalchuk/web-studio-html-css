@@ -1,10 +1,13 @@
-# web-studio-html-css
+# About
+A website of the WebStudio - a company that provides effective solutions for business.
 
-Technology stack: HTML, CSS, SASS(SCSS), JavaScript
+This is individual project, made from scratch.
 
-## HTML & CSS coding of the site according to the template.
+## Technical details
+### Technology stack: HTML, CSS, SASS(SCSS), JavaScript
+HTML & CSS coding of the site according to the template.
 
-This site was developed according to mobile first design.
+Incorporated the mobile first approach.
 
 HTML/CSS code was written using methodology BEM.
 
